@@ -1,16 +1,11 @@
-function multiply(a: number, b: number) {
-  return a * b;
-}
+import { Player } from "./classes/Player";
+import { IsPlayer } from "./interfaces/IsPlayer";
 
-console.log(10, 20);
+const mashrafi = new Player("Mashrafi", 40, "BD");
+let sakib: IsPlayer;
+sakib = new Player("Sakib", 35, "ENG");
 
-let fruits = ["apple", "banana", "orange"];
-fruits.push("pineapple");
+const players: IsPlayer[] = [];
 
-let person = {
-  name: "Walker",
-  age: 35,
-  isVerified: true,
-};
-
-person.name = "John";
+players.push(sakib);
+players.push(mashrafi);
